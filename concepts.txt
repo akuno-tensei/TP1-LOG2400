@@ -1,0 +1,43 @@
+Acteurs : Intérêts externes
+- Utilisateur : Rôle principal interagissant avec la machine
+- Client
+- Serveur
+- Entreprise
+- Fabricant : Destinataire des rapports de diagnostic
+- Serveur Distant / Serveur Fabricant : Fournit les paramètres de thé inconnus et les mises à jour logicielles
+
+Composants Matériels (Hardware / Interface)
+- Machine
+- Mode
+- Écran : Affiche l'IHM / les options / le résumé de diagnostic
+- LecteurCodeBarre : Capteur physique pour scanner 
+- RéceptacleThé : Pour récupérer le thé du client
+- RéservoirIngrédient : Contenant les thé dans la machine
+- Capteur : Niveau d'eau, température, présence de thé
+- Actionneur
+- SystèmeChauffage
+
+Données et Entités Métier (Données / Logiciel)
+- Thé
+- ParamètresInfusion : Température, durée d'infusion
+- CodeSecurite
+- ConfigurationMachine : Horaire de mise en veille, langue, code de sécurité, paramètres réseau, thé par défaut, etc.
+- Donnée
+- DonnéeInfusion
+- DonnneConfig
+- DonneeRapport
+- Mesure
+- Unité
+- BaseDeDonnées : Locale, stocke les paramètres d'infusion
+- CodeBarre
+- Logiciel
+- VersionLogiciel
+- SéquenceArrêt
+
+Processus et Services (Comportements)
+- SéquenceNettoyage
+- FonctionNettoyage
+- TestDiagnostic
+- RapportTest
+- RapportDiagnostic : Résultat des tests de diagnostic (collection de RapportTest)
+- MiseÀJourLogiciel
